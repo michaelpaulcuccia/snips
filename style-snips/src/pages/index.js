@@ -1,13 +1,29 @@
 import React from 'react';
 import '../style/reset.css';
 import Layout from '../components/Layout';
-import Button from '../components/Button.js'
+import Header from '../components/Header';
+import Button from '../components/Button';
+import Footer from '../components/Footer';
 
 const index = () => {
   return (
     <Layout>
-      Hello, from Index.js
+      <Header />
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
+      <h1>Hello, from Index.js</h1>
       <Button>Click</Button>
+      <Footer />
     </Layout>
   )
 }

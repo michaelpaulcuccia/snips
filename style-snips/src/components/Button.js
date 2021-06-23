@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.button`
     display:inline-block;
+    width: fit-content;
     padding:0.5em 1.3em;
     border: none;
     border-radius:0.2em;
