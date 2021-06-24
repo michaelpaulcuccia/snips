@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 const Wrapper = styled.footer`
     width: 100%;
     height: 250px;
-    background-color: #282d32;;
+    background-color: #282d32;
     color: #f0f9ff;
 
     @media (max-width: 765px){

@@ -23,7 +23,7 @@ const Main = styled.div`
                 return Tents
             }
         }
-    })    
+    }) 
 `;
 
 const Title = styled.div`
@@ -49,7 +49,8 @@ const CommonCard = props => {
     console.log(props)
 
     return (
-        <Main {...props.image}>        
+        <Main> 
+            {props.image}       
             
             <Title>
                 {props.title}
