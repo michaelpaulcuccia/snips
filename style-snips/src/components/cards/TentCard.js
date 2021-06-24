@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Campfire from '../../images/pexels-photo-1368382.png';
-import Coffee from '../../images/pexels-taryn-elliott-4909166.jpg';
-import Tents from '../../images/pexels-dương-nhân-1328876.jpg';
+import Tent from '../../images/pexels-dương-nhân-1328876.jpg';
 
 const Main = styled.div`
     width: 290px;
@@ -13,18 +11,8 @@ const Main = styled.div`
     background-size: 100%;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    background-image: url(${props => 
-        {
-            if (props.image === 'campfire'){
-                return Campfire
-            } else if (props.image === 'coffee'){
-                return Coffee
-            } else {
-                return Tents
-            }
-        }
-    }) 
-`;
+    background-image: url(${Tent})
+ `;
 
 const Title = styled.div`
     display: flex;
@@ -45,12 +33,11 @@ const Body = styled.div`
 `;
 
 
-const CommonCard = props => {
+const TentCard = props => {
     console.log(props)
 
     return (
-        <Main> 
-            {props.image}       
+        <Main>      
             
             <Title>
                 {props.title}
@@ -64,4 +51,4 @@ const CommonCard = props => {
     )
 }
 
-export default CommonCard
+export default TentCard
