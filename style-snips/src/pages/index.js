@@ -1,30 +1,26 @@
 import React from 'react';
 import '../style/reset.css';
-import Layout from '../components/Layout';
+import MainWrapper from '../components/layout/MainWrapper';
 import Header from '../components/Header';
-import Button from '../components/Button';
+//import Button from '../components/Button';
 import Footer from '../components/Footer';
+import CommonCard from '../components/Cards/CommonCard';
+
 
 const index = () => {
   return (
-    <Layout>
+    <MainWrapper>
       <Header />
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <h1>Hello, from Index.js</h1>
-      <Button>Click</Button>
-      <Footer />
-    </Layout>
+      
+       
+           <CommonCard
+            image='coffee'
+            title='Ah yes...'
+            body='I always travel with a means to make myself a cup of Joe.'
+          />
+ 
+          <Footer />
+    </MainWrapper>
   )
 }
 

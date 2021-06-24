@@ -4,50 +4,47 @@ import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Wrapper = styled.footer`
     width: 100%;
-    height: 20vh;
+    height: 250px;
     background-color: #282d32;;
     color: #f0f9ff;
+
+    @media (max-width: 765px){
+        height: 175px;
+    }
 `;
 
 const ItemsWrapper = styled.div`
     padding: 30px 45px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+
+    @media (max-width: 700px) {
+        padding: 10px 15px 20px 15px;
+    }
 `;
 
-const Services = styled.div`
+const ListCol = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 0px 25px 0px 0px;
-
+    
     h2 {
         margin-bottom: 15px;
+
+        @media (max-width: 765px){
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
     }
 
     p {
         line-height: 1.4;
         font-size: 14px;
+        
+        @media (max-width: 765px){
+            line-height: 1.1;
+            font-size: 10px;
+        }
     }
-`;
-
-const About = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 0px 0px 0px 25px;
-
-    h2 {
-        margin-bottom: 15px;
-    }
-
-    p {
-        line-height: 1.4;
-        font-size: 14px;
-    }
-
-`;
-
-const Company = styled.div`
-   margin-left: 60px;
 
 `;
 
@@ -57,10 +54,19 @@ const IconWrapper = styled.div`
 
     .icon {
         padding: 0px 12.5px;
+
+        @media (max-width: 765px){
+            padding: 0px 7.5px;
+        }
         
         svg {
             height: 32px;
             width: 32px;
+
+            @media (max-width: 765px){
+                height: 24px;
+                width: 24px;
+            }
         }
     }
 
@@ -71,6 +77,11 @@ const CopyWrapper = styled.div`
     justify-content: center;
     padding-top: 15px;
     font-size: 12px;
+
+    @media (max-width: 765px) {
+        padding-top: 8px;
+        font-size: 10px;
+    }
 `;
 
 
@@ -80,24 +91,20 @@ const Footer = () => {
 
             <ItemsWrapper>
 
-                <Services>
+                <ListCol>
                     <h2>Services</h2>
                     <p>User Interface (UI)</p>
                     <p>Web Development</p>
-                </Services>
+                </ListCol>
 
-                <About>
+                <ListCol>
                     <h2>About</h2>
                     <p>Company</p>
                     <p>Team</p>
                     <p>Careers</p>
-                </About>
+                </ListCol>
 
-                <Company>
-                    <h2>Company</h2>
-                    <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
-                </Company>
-
+            
             </ItemsWrapper>
 
             <IconWrapper>
