@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
-    margin: 15px 0px;
+    margin: 5px 0px;
 
     @media (max-width: 765px){
         flex-direction: column;

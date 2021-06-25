@@ -1,13 +1,10 @@
 import React from 'react';
 import '../style/reset.css';
 import MainWrapper from '../components/layout/MainWrapper';
+import CommonCard from '../components/cards/CommonCard';
 import CardWrapper from '../components/layout/CardWrapper';
 import Header from '../components/Header';
-import CampCard from '../components/Cards/CampCard';
-import CoffeeCard from '../components/Cards/CoffeeCard';
-import TentCard from '../components/Cards/TentCard';
 import Footer from '../components/Footer';
-
 //import Button from '../components/Button';
 
 
@@ -18,19 +15,23 @@ const index = () => {
       
       <CardWrapper>
 
-        <CampCard          
-          title="Let's Go Camping!"
-          body='Body Text Goes Here. Something...and then something else.'      
+        <CommonCard 
+          image='campfire'
+          title="Dark Woods"
+          body="There is something about a fire on a dark night, a fire shared with others, that pulls the gloom right out of you." 
         />
-        <CoffeeCard          
-          title="Cup O' Joe"
-          body='Always ready for this!'      
+
+        <CommonCard 
+          titleColor='dark'
+          bodyColor='dark'
+          image='coffee'
+          title="Coffee, ah..."
         />
-        <TentCard          
-          title='TentLife'
-          body="It's like van life, but without the cost of gas."      
+
+        <CommonCard 
+          title="No Service?"
+          body="No problem. You're connected out here." 
         />
-       
 
       </CardWrapper>
                 

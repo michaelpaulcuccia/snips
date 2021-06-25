@@ -1,12 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaInstagram, FaYoutube } from "react-icons/fa";
+import Trees from '../images/pexels-skitterphoto-240040.jpg'
 
 const Wrapper = styled.footer`
     width: 100%;
     height: 250px;
-    background-color: #282d32;
     color: #f0f9ff;
+    //background-color: #282d32;
+   
+    background-image: url(${Trees});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (max-width: 765px){
         height: 175px;

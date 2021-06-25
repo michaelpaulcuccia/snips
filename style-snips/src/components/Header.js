@@ -44,8 +44,9 @@ const Text = styled.p`
     }
 
     @media (max-width: 765px) {
-        font-size: 28px;
-        padding-top: 15vh;
+        font-size: 32px;
+        padding-top: 11vh;
+        animation: none;
     }
 `;
 
